@@ -1,0 +1,25 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.dashboard-card {
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.sidebar {
+  background-color: #343a40;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+}

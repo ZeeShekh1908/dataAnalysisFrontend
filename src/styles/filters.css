@@ -1,0 +1,65 @@
+/* frontend/src/styles/filters.css */
+
+/* General styling for the filters container */
+.filters {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filters h2 {
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Dropdown container styling */
+.filters label {
+  display: block;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+.filters select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+  color: #495057;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  appearance: none; /* Hide default arrow */
+  cursor: pointer;
+}
+
+/* Add a custom dropdown arrow */
+.filters select::after {
+  content: '\25BC';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6c757d;
+}
+
+/* Focus state */
+.filters select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Add margin between filter items */
+.filter-item {
+  margin-bottom: 20px;
+}
+
+.filter-item:last-child {
+  margin-bottom: 0;
+}
